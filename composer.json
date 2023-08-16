@@ -1,7 +1,7 @@
 {
   "name": "bolt-design-system/bolt_connect",
   "type": "drupal-module",
-  "version": "5.9.1",
+  "version": "5.9.2",
   "description": "Connect to Bolt Design System",
   "keywords": [
     "drupal",
@@ -23,14 +23,18 @@
       "Drupal\\bolt_connect\\": "src"
     }
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/boltdesignsystem/twig-tools"
-    }
-  ],
+  "repositories": {
+      "0" :{
+        "type": "vcs",
+        "url": "https://github.com/sreenivasulu-paruchuri/twig-tools.git"
+      },
+      "1" : {
+        "type": "vcs",
+        "url": "https://github.com/sreenivasulu-paruchuri/core-php.git"
+      }
+  },
   "require": {
-    "bolt-design-system/core-php": "5.9.1",
+    "bolt-design-system/core-php": "5.9.2",
     "basaltinc/twig-tools": "dev-master as 1.4.3",
     "webmozart/path-util": "^2.3"
   }
